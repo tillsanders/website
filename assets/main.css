@@ -1,0 +1,132 @@
+html {
+  --color-primary: hsl(118, 77%, 62%);
+  --color-text: hsl(0, 0%, 100%);
+  --color-heading: var(--color-text);
+  --color-paragraph: hsl(0, 0%, 56%);
+  --color-background: hsl(120, 18%, 7%);
+  --color-medium: hsl(120, 18%, 26%);
+  --color-dark: hsl(118, 77%, 15%);
+  --color-darker: hsl(120, 8%, 3%);
+  --color-finanzritter: hsl(193, 100%, 45%);
+  --color-oec: hsl(48, 100%, 55%);
+  --space-base: 2rem;
+
+  font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 30rem) {
+  *,
+  *::before,
+  *::after {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  html {
+    --space-base: 3rem;
+  }
+  *,
+  *::before,
+  *::after {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  html {
+    --space-base: 3rem;
+  }
+  *,
+  *::before,
+  *::after {
+    font-size: 1.2rem;
+  }
+}
+
+section + section::before {
+  content: "~~~";
+  width: 100%;
+  text-align: center;
+  margin: var(--space-base) 0;
+  color: var(--color-primary);
+  background-size: 200%;
+  background-image: linear-gradient(90deg, var(--color-dark), var(--color-primary), var(--color-dark), var(--color-primary), var(--color-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation-name: section;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes section {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+h1, h2, h3, p {
+  margin: var(--space-base) 0;
+}
+
+h1 small {
+  display: block;
+  color: var(--color-primary);
+}
+
+h2 small, h3 small {
+  color: var(--color-medium);
+  font-style: italic;
+}
+
+p, li {
+  color: var(--color-paragraph);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  border-bottom: 2px solid hsl(118, 77%, 15%);
+  word-break: break-all;
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+}
+
+li {
+  margin: var(--space-base) 0;
+}
+
+ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+}
