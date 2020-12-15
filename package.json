@@ -3,7 +3,7 @@
   "author": "Till Sanders <mail@till-sanders.de>",
   "license": "UNLICENSED",
   "description": "Tiny bit boring. Sry. It shows roughly what I do, but that is actually more of a reminder for myself.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
+    "@openfonts/fira-code_latin": "^1.44.8",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "vue-plausible": "^1.0.1"
