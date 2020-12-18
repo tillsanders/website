@@ -21,7 +21,7 @@
     </header>
     <section>
       <h2 class="finanzritter">
-        FinanzRitter
+        <a href="https://finanzritter.com">FinanzRitter</a>
         <small>~&nbsp;Co-founder, Chief&nbsp;Product&nbsp;Officer</small>
       </h2>
       <p>
@@ -30,7 +30,7 @@
         digital insurance broker.
       </p>
       <h2 class="oec">
-        OpenElectionCompass
+        <a href="https://open-election-compass.com">OpenElectionCompass</a>
         <small>~&nbsp;Creator</small>
       </h2>
       <p>
@@ -103,7 +103,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header p {
   color: var(--color-text);
 }
@@ -114,12 +114,14 @@ header img {
   display: block;
 }
 
-h2.finanzritter {
+h2.finanzritter a {
   color: var(--color-finanzritter);
+  border-color: var(--color-finanzritter);
 }
 
-h2.oec {
+h2.oec a {
   color: var(--color-oec);
+  border-color: var(--color-oec);
 }
 
 .cloudy {
