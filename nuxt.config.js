@@ -10,7 +10,10 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'google-site-verification', content: '36U7vc4tK-0yDsq9LODHHfdAWPemNBvHahwgFTsraOc' },
+      {
+        name: 'google-site-verification',
+        content: '36U7vc4tK-0yDsq9LODHHfdAWPemNBvHahwgFTsraOc',
+      },
     ],
     link: [
       {
