@@ -6,7 +6,7 @@
 
       <h2>Angaben gemäß § 5 TMG</h2>
       <p>Till Sanders<br />
-      Corneliusstraße 5<br />
+      Kronprinzenstraße 3<br />
       58511 Lüdenscheid</p>
 
       <h2>Kontakt</h2>
